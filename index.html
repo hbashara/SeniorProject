@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Link to Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wedding Event</title>
+</head>
+
+<body>
+
+    <header> <!--Header-->
+        <h1>Jack &amp; Emily</h1>
+        <p>05/24/2024</p>
+        <p>Los Angeles</p>
+        <nav>
+            <ul>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#registry">Registry</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main> <!--Main-->
+
+        <section id="details"> <!--Details Section-->
+            <h2>Details</h2>
+            <p>Mr. and Mrs. Miller and Mr. and Mrs. Clark have the pleasure of inviting you to join them in the marriage
+                of their children, Jack and Emily, on the twentyfourth of May, twenty twentyfour at the Warner Center
+                Marriot Woodland Hills.</p>
+            <div>
+                <section>
+                    <h3>Emily</h3>
+                    <div>
+                        <img src="images/emily_personal_img.png" width="150" height="150" alt="Elated Emily">
+                        <!--Source: https://stock.adobe.com/images/beautiful-woman-in-field-with-her-boyfriend/116954834-->
+                        <p>Emily ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
+                </section>
+                <section>
+                    <h3>Jack</h3>
+                    <img src="images/jack_personal_img.png" width="150" height="150" alt="=Joyful Jack">
+                    <!--Source: https://stock.adobe.com/images/happy-young-couple-enjoying-a-day-in-meadow/120017922-->
+                    <p>Jack ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p>
+                </section>
+            </div>
+        </section>
+
+        <section id="rsvp"> <!--RSVP Section-->
+            <h2>RSVP</h2>
+            <p>Please let us know if you will be attending.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Your Phone Number" name="phone">
+
+                <label for="attending">Will you be attending?</label>
+                <select id="attending" name="attending" required>
+                    <option value="">Please select an option</option>
+                    <option value="yes">Yes, I will be attending</option>
+                    <option value="no">No, I will not be attending</option>
+                </select>
+
+                <label for="guests">Number of guests:</label>
+                <input type="number" id="guests" name="guests" placeholder="How many will be joining you?" min="0">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"
+                    placeholder="Please include any other information here."></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="registry"> <!--Registry Section-->
+            <h2>Registry</h2>
+            <p>We can't wait to celebrate with you on our wedding day!</p>
+            <p>We're planning a honeymoon to Paris - if you'd like to help us get there by contributing to our
+                honeymoon fund, we'd be grateful! You can find our honeymoon registry below.<a href=#>here</a></p>
+            <div>
+                <button>Help us get to Paris!</button>
+            </div>
+        </section>
+
+        <section id="faq"> <!--FAQ Section-->
+            <h2>FAQ</h2>
+            <p>Below are some questions you may have about the RSVP or the event itself.</p>
+            <dl>
+                <dt>What date should I RSVP by?</dt>
+                <dd>Please RSVP by January 1st, 2024.</dd>
+                <dt>Indoor or Outdoor Event?</dt>
+                <dd>Both the ceremony and reception will take place outdoors at the Warner Marriot Woodland Hills.</dd>
+                <dt>Where is the event?</dt>
+                <dd>The ceremony and reception will both be held at the Warner Center Marriot Woodland Hills. 21850
+                    Oxnard Street, Woodland Hills, CA 91367.</dd>
+                <dt>Is there a dress code?</dt>
+                <dd>Evening or Semi-Formal dress is encouraged, but not required.</dd>
+                <dt>What kind of gifts would the couple like?</dt>
+                <dd>The couple considers your presence as present enough on their special day, but if you would like to
+                    contribute to their honeymoon fund, please check out the <a href="#registry">registry.</a> above
+                </dd>
+                <dt>What accomodations are nearby for those out of town?</dt>
+                <dd>Please reach out to the couple or their parents if you are travelling from out of town.
+                    Additionally, please include message about accomodations when you RSVP.</dd>
+            </dl>
+        </section>
+
+    </main>
+
+    <footer> <!--Footer-->
+
+        <p><small>Designed by Hannah Bashara</small></p>
+        <p><small>Photos from Adobe Stock</small></p>
+
+    </footer>
+</body>

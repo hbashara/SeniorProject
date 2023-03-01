@@ -1,0 +1,294 @@
+* {             /*clear default spacing*/
+    padding: 0;
+    margin: 0;
+}
+
+/*// HTML //*/
+html {
+    background-color: #D1DBD2;
+}
+
+/*// //*/
+body {
+    color: #5f6879;
+    background-color: #FAFAF8;
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+
+}
+
+/*// Header //*/
+header {
+    background: url("images/main_mobile_img.jpg") no-repeat;
+    /*Source: https://stock.adobe.com/images/young-couple-dancing-in-a-field-of-tall-grass/119661982 */
+    height: 640px;
+    padding-top: 50px;
+    margin-bottom: -75px;
+}
+
+h1 {
+    font-size: 48px;
+    padding-left: 10px;
+    padding-top: 20px;
+
+}
+
+header p {
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+dt {
+    color: #d1b306;
+    font-family: 'Fugaz One', cursive;
+}
+
+/*/Nav/*/
+nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 414px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    width: 103.5px;
+    background-color: #889C55;
+    color: #FAFAF8;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    background-color: #FAFAF8;
+    color: #889C55;
+}
+
+/*// Main //*/
+main section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/*/Details Section/*/
+
+#details div {
+    text-align: center;
+}
+
+#details img {
+    padding: 10px;
+}
+
+p {
+    padding: 5px;
+}
+
+/*/RSVP Section/*/
+
+#rsvp {
+    background-color: #B1C379;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FAFAF8;
+}
+
+#rsvp h2 {
+    color: #FAFAF8;
+}
+
+/*/Form/*/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #889C55;
+    border-radius: 4px;
+    color: #889C55;
+}
+
+input::placeholder {
+    color: #889C55;
+}
+
+
+textarea {
+    height: 100px;
+    color: #889C55;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #889C55;
+    color: #FAFAF8;
+    border: solid 2px #889C55;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #FAFAF8;
+    color: #d1b306;
+
+}
+
+/*/Registry Section/*/
+#registry a {
+    color: #FAFAF8;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#registry a:hover {
+    color: #d1b306;
+
+}
+
+#registry div {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*/FAQ Section/*/
+#faq dl {
+    padding: 10px;
+}
+
+#faq dt {
+    font-weight: bold;
+}
+
+#faq dd {
+    padding: 10px;
+}
+
+#faq a {
+    color: #889C55;
+    text-decoration: none;
+}
+
+#faq a:hover {
+    color: #d1b306;
+}
+
+/*// Footer //*/
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/*//Medium Display Screen//*/
+
+@media screen and (min-width:834px) {
+
+    body {
+        width: 768px;
+    }
+
+    header {
+        background: url("images/main_tablet_img.jpg") no-repeat;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        padding-left: 300px;
+        padding-top: 50px;
+    
+    }
+    
+    header p {
+        padding: 0px 50px;
+    }
+
+    nav {
+        width: 768px;
+    }
+
+    nav a {
+        width: 192px;
+    }
+
+
+}
+
+/*//Large Display Screen//*/
+
+@media screen and (min-width:1300px) {
+
+    body {
+        width: 1280px;
+    }
+
+    header {
+        background: url("images/main_desktop_img.jpg") no-repeat;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        padding-left: 900px;
+        padding-top: 50px;
+    
+    }
+    
+    header p {
+        padding: 0px 50px;
+    }
+    nav {
+        width: 1280px;
+    }
+
+    nav a {
+        width: 320px;
+    }
+
+}
